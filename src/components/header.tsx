@@ -1,6 +1,6 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Logo } from "@/components/logo";
-import { CardSidebar } from "@/components/card/sidebar";
+import { CardSidebar } from "@/components/cart/sidebar";
 
 export const Header = () => {
   return (
