@@ -12,8 +12,11 @@ import { Separator } from "@/components/ui/separator";
 import { useCartStore } from "@/store/cart-store";
 import { CartItem } from "./item";
 import { ScrollArea, ScrollBar } from "../ui/scroll-area";
+import { useState } from "react";
+import { DialogCheckout } from "../checkout/dialog";
 
 export const CardSidebar = () => {
+  const [CheckoutOpen, setCheckoutOpen] = useState(false);
   const { cart } = useCartStore((state) => state);
   let subtotal = 0;
   for (let item of cart) {
@@ -48,9 +51,15 @@ export const CardSidebar = () => {
           </div>
           <Separator className="mt-4" />
           <div className="text-center mt-4">
-            <Button disabled={cart.length === 0}>Finalizar Compra</Button>
+            <Button
+              onClick={() => setCheckoutOpen(true)}
+              disabled={cart.length === 0}
+            >
+              Finalizar Compra
+            </Button>
           </div>
         </ScrollArea>
+        <DialogCheckout open={CheckoutOpen} onOpenChange={setCheckoutOpen} />
       </SheetContent>
     </Sheet>
   );
