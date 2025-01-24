@@ -3,12 +3,12 @@ import { create } from "zustand";
 type States = {
   name: string;
   address: {
-    street: string;
-    number: string;
-    complement?: string | undefined;
-    district: string;
-    city: string;
-    state: string;
+    logradouro: string;
+    numero: string;
+    complemento?: string | undefined;
+    bairro: string;
+    localidade: string;
+    uf: string;
   };
 };
 type Actions = {
@@ -19,12 +19,12 @@ type Actions = {
 const inicialStates: States = {
   name: "",
   address: {
-    street: "",
-    number: "",
-    complement: "",
-    district: "",
-    city: "",
-    state: "",
+    logradouro: "",
+    numero: "",
+    complemento: "",
+    bairro: "",
+    localidade: "",
+    uf: "",
   },
 };
 

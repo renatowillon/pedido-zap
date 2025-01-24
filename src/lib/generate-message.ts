@@ -11,8 +11,8 @@ export const generateMessage = () => {
 
   return `*Dados do Cliente:*
 Nome: ${name}
-Endereço: ${address.street}, ${address.number}, (${address.complement})
-${address.district}, ${address.city}/${address.state}
+Endereço: ${address.logradouro}, ${address.numero}, (${address.complemento})
+${address.bairro}, ${address.localidade}/${address.uf}
 ------
 *Pedido:*
 ${orderProdutts.join("\n")}`;
