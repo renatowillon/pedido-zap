@@ -1,3 +1,4 @@
+import { createNumberGenerator } from "@/services/numPedido";
 import { useCartStore } from "@/store/cart-store";
 import { useCheckoutStore } from "@/store/checkout-store";
 
@@ -8,6 +9,7 @@ export const generateMessage = () => {
   for (let item of cart) {
     orderProdutts.push(`${item.quantity} x ${item.product.name}`);
   }
+  const numPedido = createNumberGenerator();
 
   return `*Dados do Cliente:*
 Nome: ${name}

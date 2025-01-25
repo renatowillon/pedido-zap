@@ -2,6 +2,13 @@ import { useCheckoutStore } from "@/store/checkout-store";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { generateMessage } from "@/lib/generate-message";
+import { use, useEffect } from "react";
+
+const refresh = () => {
+  setTimeout(() => {
+    window.location.reload();
+  }, 2000);
+};
 
 export const StepFinish = () => {
   const { name } = useCheckoutStore((state) => state);
@@ -19,7 +26,7 @@ export const StepFinish = () => {
         Agora envie seu pedido ao nosso Whatsapp para concluir. Nosso atendente
         irá te guiar sobre o andamento do pedido.
       </p>
-      <Button>
+      <Button onClick={refresh}>
         <Link target="_blank" href={linkZap}>
           Enviar Para o Whatsapp
         </Link>
