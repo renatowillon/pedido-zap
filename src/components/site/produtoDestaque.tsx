@@ -25,7 +25,7 @@ export const ProdutoDestaque = () => {
               alt="food"
               className="w-[400px] object-cover"
             />
-            <h1 className="text-3xl font-bold text-center">Vegetable steaks</h1>
+            <h1 className="text-3xl font-bold text-center">Vegetable Steaks</h1>
             <p className="text-center">
               Our vegetable steak is a hearty blend of<br></br> grilled veggies,
               seasoned to perfection and<br></br> served with a savory sauce.
