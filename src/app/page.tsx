@@ -4,7 +4,7 @@ import { ProdutoDestaque } from "@/components/site/produtoDestaque";
 
 const Page = () => {
   return (
-    <div className="">
+    <div className="w-full h-full">
       <div className="">
         <HeaderSite />
         <BannerSite />
