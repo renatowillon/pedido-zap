@@ -10,8 +10,9 @@ export const Footer = () => {
     <div>
       <Separator />
       <div className="p-10 grid gap-3 grid-cols-1 md:grid-cols-4">
-        <div className="flex items-center justify-center md:col-span-2">
-          <Logo />
+        <div className="flex gap-2 items-center justify-center md:col-span-2 text-3xl">
+          <img src="images/site/logo/logo.png" className="w-36" />
+          Pedido <p className="font-bold text-4xl">ZAP</p>
         </div>
         <div className="flex flex-col gap-3 items-center justify-center">
           <Button className="border w-48 h-14 bg-primary border-primary">

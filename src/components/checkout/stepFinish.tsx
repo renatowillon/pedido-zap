@@ -2,7 +2,6 @@ import { useCheckoutStore } from "@/store/checkout-store";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { generateMessage } from "@/lib/generate-message";
-import { use, useEffect } from "react";
 
 const refresh = () => {
   setTimeout(() => {
