@@ -13,15 +13,36 @@ export const Feedback = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center p-10 gap-10">
-        <div className="w-1/4">
-          <CardFeedback />
+      <div className="flex flex-col md:flex-row items-center justify-center p-10 gap-10">
+        <div className="">
+          <CardFeedback
+            descricao="The food here is absolutely amazing!I keep coming back for more.
+          Highly recommended!"
+            name="Renato Willon"
+            jobs="Front End"
+            foto="/images/site/carnes.png"
+            avaliacao={5}
+          />
         </div>
-        <div className="w-1/4">
-          <CardFeedback />
+        <div className="">
+          <CardFeedback
+            descricao="The food here is absolutely amazing!I keep coming back for more.
+          Highly recommended!"
+            name="Renato Willon"
+            jobs="Front End"
+            foto="/images/site/carnes.png"
+            avaliacao={5}
+          />
         </div>
-        <div className="w-1/4">
-          <CardFeedback />
+        <div className="">
+          <CardFeedback
+            descricao="The food here is absolutely amazing!I keep coming back for more.
+          Highly recommended!"
+            name="Renato Willon"
+            jobs="Front End"
+            foto="/images/site/carnes.png"
+            avaliacao={5}
+          />
         </div>
       </div>
     </div>

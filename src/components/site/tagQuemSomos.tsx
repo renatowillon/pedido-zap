@@ -8,7 +8,7 @@ type Props = {
 export const TagQuemSomos = ({ titulo, descricao, imagem }: Props) => {
   return (
     <div className="flex gap-5 max-w-xl items-center justify-center bg-primary rounded-2xl p-3 hover:shadow-xl transition-all hover:scale-105">
-      <div className="p-3">
+      <div className="p-3 hidden md:flex">
         <img src={imagem} alt={titulo} className="w-56 h-4w-56" />
       </div>
       <div>

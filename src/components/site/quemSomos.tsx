@@ -2,7 +2,7 @@ import { TagQuemSomos } from "./tagQuemSomos";
 
 export const QuemSomos = () => {
   return (
-    <div className="p-10 grid grid-cols-2 gap-5 bg-secondary-foreground">
+    <div className="p-10 grid md:grid-cols-2 grid-cols-1 gap-5 bg-secondary-foreground">
       <div className="flex flex-col">
         <h1 className="text-4xl text-secondary font-bold">Quem somos &</h1>
         <h1 className="text-5xl text-primary font-bold">O que fazemos</h1>
@@ -31,7 +31,7 @@ export const QuemSomos = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-2 ">
+      <div className="grid-cols-2 hidden md:grid gap-2 pointer-events-none">
         <img
           src="/images/site/hamburguer.png"
           alt="hamburguer"
@@ -45,7 +45,12 @@ export const QuemSomos = () => {
         <img
           src="/images/site/pao.png"
           alt="pao"
-          className="w-96 h-96 rounded-full col-span-2"
+          className="w-96 h-96 rounded-full"
+        />
+        <img
+          src="/images/site/hamburguer.png"
+          alt="hamburguer"
+          className="w-96 h-96 rounded-full"
         />
       </div>
     </div>
