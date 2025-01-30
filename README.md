@@ -8,14 +8,23 @@ Site instituicional da empresa contendo inumeras informações sobre ela, e aind
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [React]
+- [Next]
 - [TypeScript]
 - [Tailwind CSS]
-- [Lucide]
+- [Lucide Icons]
+- [Zod]
+- [Zustand]
+- [Shadcn/UI]
 
 ## :computer: Projeto
 
 Projeto vontado para Restaurantes, no qual queiram ter uma pagina institucional e ainda compartilhar seu cardapio e poder realizar pedido e enviar no Whatsapp da empresa.
+
+## 👨‍💻 Instalação Projeto
+
+- Projeto em Next
+- Iniciar um NPM INSTALL
+- Criar um arquivo .env com numero do whatsapp para ser enviado
 
 ## 📝 Licença
 
