@@ -1,6 +1,6 @@
 # 🧑‍🍳 Pedido Zap
 
-<h1 align="center"> <img alt="nlw-logo" src="/images/site/homePage.png" /> </h1>
+<h1 align="center"> <img alt="homePage" src="/public/images/site/homePage.png" /> </h1>
 
 Site instituicional da empresa contendo inumeras informações sobre ela, e ainda ter a possibilidade de aocmpanhar o cardapio de cada uma delas e fazer um pedido enviando o mesmo para o whatsapp da empresa
 
