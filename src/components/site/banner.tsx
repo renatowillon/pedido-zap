@@ -9,7 +9,7 @@ export const BannerSite = () => {
     <div className="h-[750px] bg-[url(/images/background/Background2.png)] bg-cover ">
       <div className="p-10">
         <h1 className="md:text-8xl text-5xl font-bold text-white">
-          GOURMET FOOD
+          Comida Deliciosa
         </h1>
         <h1 className="md:text-8xl text-4xl font-bold text-primary">
           Entregamos em

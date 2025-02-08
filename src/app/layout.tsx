@@ -15,9 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pedido Zap",
+  title: "Meu Restaurante",
   description: "O Melhor restaurante de sua região",
-  keywords: ["Pedido Zap", "Restaurante", "Comida", "Delivery", "Adquira já!"],
+  keywords: [
+    "Meu Restaurante",
+    "Restaurante",
+    "Comida",
+    "Delivery",
+    "Adquira já!",
+  ],
   authors: [{ name: "Renato Willon", url: "https://renatowillon.vercel.app/" }],
   creator: "Renato Willon",
   publisher: "Renato Willon",
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
         url: "https://pedido-zap.vercel.app/images/site/homePage.png",
         width: 1200,
         height: 630,
-        alt: "Home Page Pedido Zap",
+        alt: "Home Page Meu Restaurante",
       },
     ],
     url: "https://pedido-zap.vercel.app",
@@ -39,7 +45,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/android-chrome-192x192.png",
   },
-  themeColor: "#ffffff",
+  //themeColor: "#ffffff",
   robots: {
     index: true,
     follow: true,
