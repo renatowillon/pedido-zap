@@ -15,7 +15,7 @@ export const StepFinish = () => {
   const [contatoZap, setContatoZap] = useState("");
   const { name } = useCheckoutStore((state) => state);
   const message = generateMessage();
-  const linkZap = `https://wa.me//${contatoZap}?text=${encodeURI(message)}`;
+  const linkZap = `https://wa.me//55${contatoZap}?text=${encodeURI(message)}`;
 
   return (
     <div className="text-center flex flex-col gap-5">
