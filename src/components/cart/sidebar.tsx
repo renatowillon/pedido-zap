@@ -22,6 +22,11 @@ export const CardSidebar = () => {
   for (let item of cart) {
     subtotal += item.quantity * item.product.price;
   }
+
+  let quantidadeItem = 0;
+  for (let qtd of cart) {
+    quantidadeItem += qtd.quantity;
+  }
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -29,7 +34,9 @@ export const CardSidebar = () => {
           <RocketIcon className="mr-2" />
           <p>Carrinho</p>
           {cart.length > 0 && (
-            <div className="absolute size-4 bg-red-600 rounded-full -right-1 -top-1"></div>
+            <div className="absolute size-6 bg-red-600  border-2 border-bg-secondary rounded-full shadow-md -right-2 -top-2 flex items-center justify-center">
+              <p className="text-xs">{quantidadeItem}</p>
+            </div>
           )}
         </Button>
       </SheetTrigger>
