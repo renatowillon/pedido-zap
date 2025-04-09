@@ -1,4 +1,12 @@
-import { Facebook, Heart, Instagram, Link2, Twitch, X } from "lucide-react";
+import {
+  Facebook,
+  Heart,
+  Instagram,
+  Link2,
+  Twitch,
+  Twitter,
+  X,
+} from "lucide-react";
 import Link from "next/link";
 import { Separator } from "../ui/separator";
 import { Logo } from "../logo";
@@ -12,7 +20,7 @@ export const Footer = () => {
       <div className="p-10 grid gap-3 grid-cols-1 md:grid-cols-4">
         <div className="flex gap-2 items-center justify-center md:col-span-2 text-3xl">
           <img src="images/site/logo/logo.png" className="w-36" />
-          Pedido <p className="font-bold text-4xl">ZAP</p>
+          Meu <p className="font-bold text-4xl">Restaurante</p>
         </div>
         <div className="flex flex-col gap-3 items-center justify-center">
           <Button className="border w-48 h-14 bg-primary border-primary">
@@ -31,21 +39,21 @@ export const Footer = () => {
           <h1 className="text-2xl font-bold">Redes Sociais</h1>
           <div className="flex gap-5">
             <Link
-              href="#"
+              href="https://api.whatsapp.com/send?phone=5583988332659"
               className="hover:scale-125 transition-all"
               target="_blank"
             >
               <Instagram />
             </Link>
             <Link
-              href="#"
+              href="https://api.whatsapp.com/send?phone=5583988332659"
               className="hover:scale-125 transition-all"
               target="_blank"
             >
-              <Twitch />
+              <Twitter />
             </Link>
             <Link
-              href="#"
+              href="https://api.whatsapp.com/send?phone=5583988332659"
               className="hover:scale-125 transition-all"
               target="_blank"
             >
@@ -62,7 +70,7 @@ export const Footer = () => {
           target="_blank"
           className="font-bold"
         >
-          wDev
+          wDev | Adquira o seu site
         </Link>
       </div>
     </div>
