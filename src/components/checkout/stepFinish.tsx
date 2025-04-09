@@ -2,6 +2,8 @@ import { useCheckoutStore } from "@/store/checkout-store";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { generateMessage } from "@/lib/generate-message";
+import { useState } from "react";
+import { CheckCheck } from "lucide-react";
 
 const refresh = () => {
   setTimeout(() => {
@@ -10,11 +12,10 @@ const refresh = () => {
 };
 
 export const StepFinish = () => {
+  const [contatoZap, setContatoZap] = useState("");
   const { name } = useCheckoutStore((state) => state);
   const message = generateMessage();
-  const linkZap = `https://wa.me//${
-    process.env.NEXT_PUBLIC_ZAP
-  }?text=${encodeURI(message)}`;
+  const linkZap = `https://wa.me//${contatoZap}?text=${encodeURI(message)}`;
 
   return (
     <div className="text-center flex flex-col gap-5">
@@ -25,6 +26,24 @@ export const StepFinish = () => {
         Agora envie seu pedido ao nosso Whatsapp para concluir. Nosso atendente
         irá te guiar sobre o andamento do pedido.
       </p>
+      <div className="flex gap-5 items-center justify-center">
+        <input
+          className="py-2 px-5 w-full rounded-lg border text-center font-bold"
+          type="text"
+          inputMode="numeric"
+          value={contatoZap}
+          onChange={(e) => {
+            const apenasNumero = e.target.value.replace(/[^0-9]/g, "");
+            setContatoZap(apenasNumero);
+          }}
+          name="telefone"
+          id=""
+          placeholder="digite seu contato para simular"
+        />
+        {/* <Button onClick={setarNumeroZap}>
+          <CheckCheck />
+        </Button> */}
+      </div>
       <Button onClick={refresh}>
         <Link target="_blank" href={linkZap}>
           Enviar Para o Whatsapp
