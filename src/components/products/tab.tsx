@@ -60,9 +60,9 @@ export const ProductsTab = async () => {
   ];
   return (
     <Tabs defaultValue="sushi" className="w-full">
-      <div className="w-full shadow-sm sticky top-0 z-10">
-        <div className="w-full flex items-center py-3 overflow-x-auto cursor-grab">
-          <TabsList className="w-full">
+      <div className="w-full h-[50px] top-0 z-10">
+        <div className="w-full flex items-start cursor-grab">
+          <TabsList className="w-full overflow-x-scroll h-[50px] scrollbar-hide">
             {tabs.map((item) => (
               <TabsTrigger
                 key={item.value}
@@ -88,13 +88,6 @@ export const ProductsTab = async () => {
           {item.products.length == 0 && <ProductEmpty />}
         </TabsContent>
       ))}
-
-      <TabsContent value="tab1" className="mt-6">
-        Conteúdo Tab 1
-      </TabsContent>
-      <TabsContent value="tab2" className="mt-6">
-        Conteúdo Tab 2
-      </TabsContent>
     </Tabs>
   );
 };

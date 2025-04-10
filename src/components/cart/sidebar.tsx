@@ -1,13 +1,14 @@
 "use client";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { RocketIcon } from "lucide-react";
+import { RocketIcon, X } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { useCartStore } from "@/store/cart-store";
 import { CartItem } from "./item";
@@ -43,8 +44,11 @@ export const CardSidebar = () => {
 
       <SheetContent>
         <ScrollArea className="h-full w-full">
-          <SheetHeader>
+          <SheetHeader className="flex flex-row items-center justify-between p-3">
             <SheetTitle>Carrinho</SheetTitle>
+            <SheetClose className="opacity-75">
+              <X className="h-4 w-4" />
+            </SheetClose>
           </SheetHeader>
           <div className="flex flex-col gap-5 my-3">
             {cart.map((item) => (
@@ -52,7 +56,7 @@ export const CardSidebar = () => {
             ))}
           </div>
           <Separator className="mt-4" />
-          <div className="flex justify-between items-center text-xs mt-4">
+          <div className="flex justify-evenly items-center text-xs mt-4">
             <div>SubTotal:</div>
             <div>R$ {subtotal.toFixed(2)}</div>
           </div>

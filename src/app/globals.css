@@ -5,7 +5,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
